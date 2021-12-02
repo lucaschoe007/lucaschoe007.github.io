@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+function makeLuffy (){
+	
+	var Luffy = document.createElement("div")
+	document.body.appendChild(Luffy);
+	Luffy.style.backgroundImage = "url(https://otakukart.com/wp-content/uploads/2020/04/One-Piece-Chapter-978-1200x900.jpg)"
+	Luffy.style.backgroundSize = "cover";
+	Luffy.style.display = "inline-blocl";
+	Luffy.style.height = "400px";
+	Luffy.style.width = "400px";
+	Luffy.addEventListener("click", function(){
+
+		Luffy.style.backgroundImage = "url(https://www.health-yogi.com/wp-content/uploads/2021/07/IMG_20210712_192612.jpg)"
+	})
+
+}
+
+setInterval(makeLuffy, 1000);
+
+</script>
+</body>
+</html>
