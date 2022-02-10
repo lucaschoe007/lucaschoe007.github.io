@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		
+#valentine{
+			width:80%;
+			font-family: 'Sacramento', monospace;
+			font-size: 170px;
+			color: white;
+			position: center;
+
+			
+
+			 }
+
+			 #text{
+
+			 	font-family: 'Sacramento', monospace;
+			font-size: 100px;
+			color: white;
+			position: center;
+			top: 700px;
+		
+
+			 }
+
+body{
+
+background-image: url(meAndMom.jpg);
+
+	width: 100%;
+	height: 2000px;
+	background-size:cover;
+	border: 10px;
+	border-color: white;
+
+
+			 }
+
+	</style>
+
+
+</head>
+
+<body>
+	<center>
+	<div id="valentine">
+		<p>
+			Happy Valentine's Day Mom 
+		</p>
+		
+	</div>
+
+<div id="text">
+	
+	<p>
+			Thank you for all of your love and hard work, I will always be your baby boy.
+
+		</p>
+</div>
+
+	</center>
+
+	<script type="text/javascript">
+
+
+
+
+document.addEventListener("click", function makeHeart (event){
+	
+	var Heart = document.createElement("div")
+	document.body.appendChild(Heart);
+	Heart.style.backgroundImage = "url(cartoonHeart.png)"
+	Heart.style.height = "200px";
+	Heart.style.width = "200px";
+	Heart.style.backgroundSize= "contain";
+	Heart.style.position = "absolute";
+
+	console.log(event.clientX, event.clientY);
+
+	Heart.style.left = event.clientX-100 + "px";
+	Heart.style.top = event.clientY-100 +"px";
+
+
+
+
+		
+	
+})
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
