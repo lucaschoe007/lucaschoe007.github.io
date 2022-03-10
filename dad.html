@@ -1,0 +1,136 @@
+</html>
+<head>
+<style type="text/css">
+
+center {
+margin: auto;
+text-align: center;
+}
+
+#player{
+width:1600px;
+height:600px;
+position: relative;
+background-size:contain;
+background-repeat: no-repeat;
+text-align: center;
+margin: auto;
+border: auto;
+padding: auto;
+}
+
+#player {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 60%;
+
+}
+
+
+#description {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 40%;
+
+}
+
+#description{
+font-size: 42px;
+width: 100px;
+height: 50px;
+background-color: white;
+left: 800;
+right: 800;
+text-align: center;
+
+}
+</style>
+</head>
+<body>
+
+<center>
+
+<h1>Click to see photos of you with our family</h1>
+
+
+<div id="player"></div>
+<div id="description"></div>
+</center>
+
+<script type="text/javascript">
+
+
+
+
+var human = ["Us Fishing","You and Latte","You and Caleb At Disney","You and Mom","You and Mocha","You in Cambodia","You with Caleb in Cambodia","You on the Rope Course in Mexico","You Flying in Mexico","You and Mom in Mexico","Us at Xenses","Family in Italy",]
+
+
+var click = [
+
+"url(IMG-5413.JPEG)", "url(IMG-4438.JPG)", "url(MK-BUZZLIGHTYEARRIDE-7192474838.JPG)", "url(IMG-5623.jpg)","url(IMG-8458.jpg)","url(IMG-0127.JPG)","url(IMG-0132.JPG)","url(ND10C2A-20211228115157a.JPG)","url(VHT2CA03-20211228105039a.JPG)","url(C210PUE-20211230111852a.JPG)","url(C330EDA-20211230103931a.JPG)","url(DSCF4833.JPG)",
+]
+
+var description = document.getElementById('description');
+
+var box = document.getElementById('player');
+
+box.addEventListener("click", function(){
+
+var organism = Math.floor(Math.random()*19);
+
+
+console.log(human[organism])
+
+box.style.backgroundImage = click[organism];
+description.innerText = human[organism];
+
+;
+box.style.backgroundColor = "white";
+
+
+})
+
+
+player.style.backgroundImage = "url(cover.jpeg)"
+
+
+</script>
+
+</body>
+</html>
+
+
+
+var human = ["Us Fishing",
+
+"You and Latte",
+"You and Caleb At Disney",
+"You and Mom",
+"You and Mocha",
+"You in Cambodia",
+"You with Caleb in Cambodia",
+"You on the Rope Course in Mexico",
+"You Flying in Mexico",
+"You and Mom in Mexico",
+"Us at Xenses",
+"Family in Italy",
+]
+
+
+var click = ["url(IMG-5413.JPEG)", 
+
+"url(IMG-4438.JPG)",
+"url(MK-BUZZLIGHTYEARRIDE-7192474838.JPG)",
+"url(IMG-5623.jpg)",
+"url(IMG-8458.jpg)",
+"url(IMG-0127.JPG)",
+"url(IMG-0132.JPG)",
+"url(ND10C2A-20211228115157a.JPG)",
+"url(VHT2CA03-20211228105039a.JPG)",
+"url(C210PUE-2021123011852a.JPG)",
+"url(C330EDA-20211230103931a.JPG)",
+"url(DSCF4833.JPG)",
+
+]

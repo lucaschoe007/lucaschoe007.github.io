@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+</html>
+<head>
+<style type="text/css">
+
+center {
+margin: auto;
+text-align: center;
+}
+
+#player{
+width:1600px;
+height:600px;
+position: relative;
+background-size:contain;
+background-repeat: no-repeat;
+text-align: center;
+margin: auto;
+border: auto;
+padding: auto;
+}
+
+#player {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 60%;
+
+}
+
+
+#description {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 40%;
+
+}
+
+#description{
+font-size: 42px;
+width: 100px;
+height: 50px;
+background-color: white;
+left: 800;
+right: 800;
+text-align: center;
+
+}
+</style>
+</head>
+<body>
+
+<center>
+
+<h1>I love you Dad and am grateful for everything you do</h1>
+
+
+<h2>(click the screen to see photos of you with family)</h2>
+
+
+<div id="player"></div>
+<div id="description"></div>
+</center>
+
+<script type="text/javascript">
+
+var text = ["Us Fishing",
+
+"You and Latte",
+"You and Caleb At Disney",
+"You and Mom",
+"You and Mocha",
+"You in Cambodia",
+"You with Caleb in Cambodia",
+"You on the Rope Course in Mexico",
+"You Flying in Mexico",
+"You and Mom in Mexico",
+"Us at Xenses",
+"Family in Italy",
+]
+
+
+var pics = ["url(fishing.jpg)", 
+
+"url(dadLatte.jpg)",
+"url(disney.jpg)",
+"url(penrose.jpg)",
+"url(dadMocha.jpg)",
+"url(dadCambodia.jpg)",
+"url(brotherDad.jpg)",
+"url(zipline2.jpg)",
+"url(zipline.jpg)",
+"url(mexico.jpg)",
+"url(mexico2.jpg)",
+"url(italy.jpg)",
+
+]
+
+
+var description = document.getElementById('description');
+
+var box = document.getElementById('player');
+
+document.addEventListener("click", function(){
+
+var random = Math.floor(Math.random()*12);
+
+
+console.log(text[random])
+box.style.backgroundImage = pics[random];
+description.innerText = text[random];
+
+})
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

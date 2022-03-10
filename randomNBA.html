@@ -1,0 +1,137 @@
+</html>
+<head>
+<style type="text/css">
+
+center {
+margin: auto;
+text-align: center;
+}
+
+#player{
+width:1600px;
+height:600px;
+position: relative;
+background-size:contain;
+background-repeat: no-repeat;
+text-align: center;
+margin: auto;
+border: auto;
+padding: auto;
+}
+
+#player {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 60%;
+
+}
+
+
+#description {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+width: 40%;
+
+}
+
+#description{
+font-size: 42px;
+width: 100px;
+height: 50px;
+background-color: white;
+left: 800;
+right: 800;
+text-align: center;
+
+}
+</style>
+</head>
+<body>
+
+<center>
+
+<h1>Click to see a random NBA Player</h1>
+
+
+<div id="player"></div>
+<div id="description"></div>
+</center>
+
+<script type="text/javascript">
+
+
+
+
+var human = ["Lebron James", "Joel Embiid", "Stephen Curry", "Kevin Durant", "James Harden", "Damian Lillard", "Giannis Antetokounmpo", "Nikola Jokić", "Kyrie Irving", "Chris Paul", "Russell Westbrook", "Kawhi Leonard", "Paul George", "Donovan Mitchell", "Julius Randle", "Zion Williamson", "Devin Booker", "Luka Dončić", "Bradley Beal", ]
+
+var click = ["url(lebronjames.jpeg)",
+
+"url(joelembiid.jpeg)",
+
+"url(stephencurry.jpeg)",
+
+"url(kevindurant.jpeg)",
+
+"url(jamesharden.jpeg)",
+
+"url(damianlillard.jpeg)",
+
+"url(giannisantetokounpo.jpeg)",
+
+"url(nikolajokić.jpeg)",
+
+"url(kyrieirving.jpeg",
+
+"url(chrispaul.jpeg",
+
+"url(russellwestbrook.jpeg",
+
+"url(kawhileonard.jpeg",
+
+"url(paulgeorge.jpeg",
+
+"url(donovanmitchell.jpeg",
+
+"url(juliusrandle.jpeg",
+
+"url(zionwilliamson.jpeg",
+
+"url(devinbooker.jpeg",
+
+"url(lukadončić.jpeg",
+
+"url(bradleybeal.jpeg",
+
+
+]
+
+var description = document.getElementById('description');
+
+var box = document.getElementById('player');
+
+box.addEventListener("click", function(){
+
+var organism = Math.floor(Math.random()*19);
+
+
+console.log(human[organism])
+
+box.style.backgroundImage = click[organism];
+description.innerText = human[organism];
+
+;
+box.style.backgroundColor = "white";
+
+
+})
+
+
+player.style.backgroundImage = "url(cover.jpeg)"
+
+
+</script>
+
+</body>
+</html>
